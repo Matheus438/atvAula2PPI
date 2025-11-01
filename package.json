@@ -9,6 +9,14 @@
     "http",
     "post"
   ],
+  "homepage": "https://github.com/Matheus438/atvAula2PPI#readme",
+  "bugs": {
+    "url": "https://github.com/Matheus438/atvAula2PPI/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matheus438/atvAula2PPI"
+  },
   "license": "ISC",
   "author": "Matheus Bispo",
   "type": "module",
@@ -16,5 +24,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
   }
 }
