@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <title>Cadastro de Produto - Farmácia</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; max-width: 600px; }
+    label { display:block; margin-top:12px; }
+    input, select { width:100%; padding:8px; box-sizing:border-box; }
+    button { margin-top:20px; padding:10px 20px; }
+  </style>
+</head>
+<body>
+  <h1>Cadastro de Produto - Farmácia</h1>
+  <form action="/cadastrarProduto" method="post">
+    <label>Nome do Produto:
+      <input type="text" name="nome" required>
+    </label>
+    <label>Categoria:
+      <select name="categoria" required>
+        <option value="">Selecione</option>
+        <option value="Medicamento Genérico">Medicamento Genérico</option>
+        <option value="Medicamento Referência">Medicamento Referência</option>
+        <option value="Cosmético">Cosmético</option>
+        <option value="Suplemento">Suplemento</option>
+      </select>
+    </label>
+    <label>Preço (R$):
+      <input type="number" name="preco" step="0.01" min="0" required>
+    </label>
+    <label>Fabricante:
+      <input type="text" name="fabricante" required>
+    </label>
+    <button type="submit">Cadastrar Produto</button>
+  </form>
+</body>
+</html>
